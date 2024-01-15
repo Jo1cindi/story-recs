@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #bfbfbf;
+  background-color: #F8F4EC;
 }
 
 /* Navigation Menu */
@@ -18,9 +18,13 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;                                                                                                                                                                                 
-  border-bottom: solid 1px #0D0D0D;
+  border-bottom: solid 1px #303440;
   margin-bottom: 20px;
-  position: static;
+  position: fixed;
+  top: 0;
+  margin-left: 5vw;
+  background-color: #F8F4EC;
+  z-index: 99;
 }
 .logo{
   width: 150px;
@@ -30,13 +34,13 @@ body{
 .logo1{
   font-size: 32px;
   font-family: 'Josefin Sans', sans-serif;
-  color: #A63005;
+  color: #405457;
 }
 .logo2{
   font-size: 30px;
   font-family: 'Cardo', serif;
   font-weight: bold;
-  color: #591902;
+  color: #D63484;
 }
 .menu-items{
   width: 40%;
@@ -54,7 +58,7 @@ body{
 .link{
   text-decoration: none;
   font-family: 'Josefin Sans', sans-serif;
-  color: #0D0D0D;
+  color: #405457;
 }
 .search-section{
   width: 40%;
@@ -64,26 +68,26 @@ body{
   justify-content: space-between;
 }
 .search-input{
-  background-color: #bfbfbf;
+  background-color: #F8F4EC;
   height: 30px;
   width: 200px;
   font-family: 'Josefin Sans', sans-serif;
   margin-right: 20px;
   outline: none;
   border: none;
-  border-bottom: 1px solid #0D0D0D;
+  border-bottom: 1px solid #303440;
   padding-left: 10px;
 }
 .signin-link{
   text-decoration: none;
   font-family: 'Josefin Sans', sans-serif;
-  color: #591902;
+  color: #405457;
 }
 .signup-link{
   font-family: 'Josefin Sans', sans-serif;
-  color: #bfbfbf;
+  color: #F8F4EC;
   outline: none;
-  background-color: #591902;
+  background-color: #D63484;
   border: none;
   height: 30px;
   width: 150px;
@@ -92,7 +96,7 @@ body{
 .line{
   width: 1px;
   height: 30px;
-  background-color: #0D0D0D;
+  background-color: #303440;
   margin-left: 10px;
 }
 
@@ -104,6 +108,9 @@ body{
   display: flex;
   align-items: center;
   padding-top: 40px;
+  position: absolute;
+  top: 8vh;
+  margin-left: 5%;
 }
 .hero-text{
   width: 50%;
@@ -112,19 +119,19 @@ body{
 .hero-text h2{
   font-family: 'Cardo', serif;
   font-size: 55px;
-  color: #0D0D0D;
+  color: #D63484;
 }
 .hero-text p{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
-  color: #0D0D0D;
+  color: #303440;
   width: 80%;
 }
 .explore{
   width: 150px;
   height: 30px;
-  color: #bfbfbf;
-  background-color: #0D0D0D;
+  color: #F8F4EC;
+  background-color: #405457;
   outline: none;
   border: none;
   margin-top: 20px;
@@ -139,13 +146,13 @@ body{
 .hero-images h6{
   font-size: 18px;
   font-family: 'Cardo', serif;
-  color: #0D0D0D;
+  color: #405457;
   margin-bottom: 5px;
 }
 .hero-images p{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
-  color: #0D0D0D;
+  color: #303440;
   margin-bottom: 10px;
 }
 .book1{
@@ -181,11 +188,15 @@ body{
   object-fit: cover;
   border-radius: 0px 0px 100px 100px;
 }
+
+/* Recommended Section */
 .recommended{
   width: 90vw;
   height: 40vh;
   background-color: rebeccapurple;
-  margin: 0 auto;
+  position: absolute;
+  top: 70vh;
+  margin-left: 5vw;
 }
 .recommended-text{
   width: 100%;
@@ -197,5 +208,34 @@ body{
 .recommended h4{
   font-size: 18px;
   font-family: 'Cardo', serif;
-  color: #0D0D0D;
+  color: #405457;
+}
+.see-more{
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #D63484;
+}
+.recommended-books{
+  width: 100%;
+  height: 85%;
+  background-color: royalblue;
+}
+.recommended-books ul{
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+.recommended-books li{
+  width: 227px;
+  height: 100%;
+  background-color: lavender;
+  list-style: none;
+}
+.recommended-books ul li img{
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
 }
