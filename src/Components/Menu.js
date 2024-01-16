@@ -1,8 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Menu = () => {
+  //Navigating to Sign up
+  const navigate  = useNavigate()
+  const handleClick =  () =>{
+    navigate("/signup")
+  }
+
+
   return (
     <>
       <div className="main">
@@ -48,8 +55,8 @@ const Menu = () => {
             <div className="line">
               
             </div>
-            <Link path to ="" className="signin-link">Sign in</Link>
-           <button className="signup-link">Sign up</button>
+            <Link path to ="/signup" className="signin-link">Sign in</Link>
+           <button className="signup-link" onClick={handleClick}>Sign up</button>
           </div>
         </>
         </div>
