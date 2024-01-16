@@ -42,6 +42,24 @@ body{
   font-weight: bold;
   color: #D63484;
 }
+.logolight{
+  width: 150px;
+  height: 20%;
+  display: flex;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.logolight1{
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  color: #F8F4EC;
+}
+.logolight2{
+  font-size: 30px;
+  font-family: 'Cardo', serif;
+  font-weight: bold;
+  color: #D63484;
+}
 .menu-items{
   width: 40%;
   height: 60%;
