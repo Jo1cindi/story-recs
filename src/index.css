@@ -1,6 +1,6 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Yeseva+One&display=swap');
 
 *{
   padding: 0;
@@ -33,7 +33,7 @@ body{
 }
 .logo1{
   font-size: 32px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #405457;
 }
 .logo2{
@@ -57,7 +57,7 @@ body{
 }
 .link{
   text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #405457;
 }
 .search-section{
@@ -71,7 +71,7 @@ body{
   background-color: #F8F4EC;
   height: 30px;
   width: 200px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-right: 20px;
   outline: none;
   border: none;
@@ -80,11 +80,11 @@ body{
 }
 .signin-link{
   text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #405457;
 }
 .signup-link{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #F8F4EC;
   outline: none;
   background-color: #D63484;
@@ -122,7 +122,7 @@ body{
   color: #D63484;
 }
 .hero-text p{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #303440;
   width: 80%;
@@ -150,7 +150,7 @@ body{
   margin-bottom: 5px;
 }
 .hero-images p{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #303440;
   margin-bottom: 10px;
@@ -193,37 +193,36 @@ body{
 .recommended{
   width: 90vw;
   height: 40vh;
-  background-color: rebeccapurple;
   position: absolute;
   top: 70vh;
   margin-left: 5vw;
+  margin-top: 20px;
 }
 .recommended-text{
   width: 100%;
   height: 15%;
-  background-color: rosybrown;
   display: flex;
   justify-content: space-between;
 }
 .recommended h4{
-  font-size: 18px;
+  font-size: 24px;
   font-family: 'Cardo', serif;
-  color: #405457;
+  color: #D63484;
+  font-weight: bold;
 }
 .see-more{
   font-size: 18px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #D63484;
+  font-weight: bold;
 }
 .recommended-books{
   width: 100%;
   height: 85%;
-  background-color: royalblue;
 }
 .recommended-books ul{
   width: 100%;
   height: 100%;
-  background-color: beige;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 12px;
@@ -231,11 +230,116 @@ body{
 .recommended-books li{
   width: 227px;
   height: 100%;
-  background-color: lavender;
   list-style: none;
 }
-.recommended-books ul li img{
+.cover{
   width: 100%;
-  height: 85%;
+  height: 70%;
   object-fit: cover;
+}
+.star{
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+.recommended-books h6{
+  font-size: 18px;
+  font-family: 'Cardo', serif;
+  color: #405457;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.recommended-books p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #303440;
+  margin-bottom: 5px;
+}
+.goodreads-ratings{
+  display: flex;
+}
+.recommended button{
+  width: 120px;
+  height: 30px;
+  background-color: #D63484;
+  color: #F8F4EC;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+.see-more2{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: #405457;
+  font-weight: bold;
+}
+/* 
+Trending Books */
+
+.trending{
+  width: 90vw;
+  height: 40vh;
+  position: absolute;
+  top: 145vh;
+  margin-left: 5vw;
+  margin-top: 20px;
+  bottom: 20px;
+}
+.trending-text{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.trending h4{
+  font-size: 24px;
+  font-family: 'Cardo', serif;
+  color: #405457;
+  font-weight: bold;
+}
+.trending p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #303440;
+  margin-bottom: 5px;                                                                                
+}
+.trending-books{
+  width: 100%;
+  height: 70%;
+}
+.trending-books ul{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+.trending-books li{
+  width: 227px;
+  height: 100%;
+  list-style: none;
+}
+.trending-books h6{
+  font-size: 18px;
+  font-family: 'Cardo', serif;
+  color: #D63484;
+  margin-top: 5px;
+  height: 50px;
+}
+.trending-books p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #303440;
+  margin-bottom: 5px;
+}
+.trending button{
+  width: 120px;
+  height: 30px;
+  background-color: #405457;
+  color: #F8F4EC;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
