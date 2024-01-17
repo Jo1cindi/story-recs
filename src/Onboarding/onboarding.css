@@ -32,13 +32,21 @@ body{
 }
 .signup h3{
     width: 70%;
-    height: 10%;
     font-family: 'Cardo', serif;
     font-size: 40px;
     color: #405457;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 40px;
     text-align: center;
+    padding-bottom: 10px;
+}
+.signup-desc{
+    width: 70%;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    color:#303440;
+    font-family: 'Montserrat', sans-serif;
 }
 .signup-inputs{
     width: 100%;
@@ -73,4 +81,64 @@ body{
     outline: none;
     border-radius: 10px;
     margin-left: 20%;
+}
+.terms-and-conditions{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 45px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.checkbox{
+    width: 15px;
+    height: 15px;
+}
+.policy-text{
+    display: flex;
+    margin-left: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.privacy-link{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #D63484;
+    font-weight: bold;
+}
+.or{
+    text-align: center;
+    margin-top: 20px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #303440;
+    font-weight: bold;
+}
+.google{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 45px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color:gainsboro;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.google p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #303440;
+    font-weight: bold;
+    margin-left: 10px;
 }
