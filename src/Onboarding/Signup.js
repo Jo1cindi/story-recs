@@ -1,11 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import "../Onboarding/onboarding.css";
 import illustration from "../Images/Glasses.svg";
 import LogoLight from "../Components/LogoLight";
 import Google from "../Images/google.svg";
 
 const Signup = () => {
+  //Navigation
+  const navigate  = useNavigate()
+
+  const handleClick = () =>{
+    navigate("/verify-account")
+  }
+
   return (
     <>
       <div className="signup">
@@ -56,7 +63,7 @@ const Signup = () => {
                 </Link>
               </div>
             </div>
-            <button className="signup-btn">Sign up</button>
+            <button className="signup-btn" onClick={handleClick}>Sign up</button>
             <p className="or">Or</p>
             <div className="google">
               <img src={Google} alt="google" />
