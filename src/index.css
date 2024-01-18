@@ -60,6 +60,25 @@ body{
   font-weight: bold;
   color: #D63484;
 }
+.logodark{
+  width: 150px;
+  height: 20%;
+  display: flex;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.logodark1{
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  color: #F8F4EC;
+}
+.logodark2{
+  font-size: 30px;
+  font-family: 'Cardo', serif;
+  font-weight: bold;
+  color: #F8F4EC;
+}
+
 .menu-items{
   width: 40%;
   height: 60%;

@@ -28,6 +28,8 @@ body{
 .signup-form{
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .signup h3{
@@ -71,7 +73,7 @@ body{
     color: #303440;
     outline: none;
 }
-.signup-inputs button{
+.signup-btn {
     width: 60%;
     height: 45px;
     background-color: #D63484;
@@ -148,4 +150,40 @@ body{
     margin: auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+}
+
+/* Sign in */
+.signin-illustration{
+    width: 50%;
+    height: 100%;
+    background-color: #D63484;
+}
+.signin-illustration img{
+    height: 75%;
+    width: 60%;
+    object-fit: cover;
+    margin-left: 20%;
+}
+.reset-link{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #405457;
+    font-weight: bold;
+}
+.signin-btn{
+    width: 60%;
+    height: 45px;
+    background-color: #405457;
+    color: #F8F4EC;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-left: 20%;
+}
+.already-link{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #405457;
+    font-weight: bold;
 }

@@ -56,7 +56,7 @@ const Signup = () => {
                 </Link>
               </div>
             </div>
-            <button>Sign up</button>
+            <button className="signup-btn">Sign up</button>
             <p className="or">Or</p>
             <div className="google">
               <img src={Google} alt="google" />
