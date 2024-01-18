@@ -25,22 +25,22 @@ const Menu = () => {
          <div className="menu-items">
           <ul>
             <li>
-              <Link path to="/Landing-Page" className="link">
+              <Link path to="/StoryRecs" className="link">
                 Home
               </Link>
             </li>
             <li>
-              <Link path to="/Landing-Page" className="link">
+              <Link path to="" className="link">
                 Books
               </Link>
             </li>
             <li>
-              <Link path to="/Landing-Page" className="link">
+              <Link path to="" className="link">
                 About us
               </Link>
             </li>
             <li>
-              <Link path to="/Landing-Page" className="link">
+              <Link path to="" className="link">
                 Categories
               </Link>
             </li>
@@ -55,7 +55,7 @@ const Menu = () => {
             <div className="line">
               
             </div>
-            <Link path to ="/signup" className="signin-link">Sign in</Link>
+            <Link path to ="/signin" className="signin-link">Sign in</Link>
            <button className="signup-link" onClick={handleClick}>Sign up</button>
           </div>
         </>
