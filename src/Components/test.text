@@ -1,0 +1,43 @@
+           <div className="menu-items">
+            <ul>
+              <li>
+                <Link path to="/StoryRecs" className="link">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link path to="" className="link">
+                  Books
+                </Link>
+              </li>
+              <li>
+                <Link path to="" className="link">
+                  About us
+                </Link>
+              </li>
+              <li>
+                <Link path to="" className="link">
+                  Categories
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <>
+            <div className="search-section">
+              <input
+                type="text"
+                className="search-input"
+                id="searchInput"
+                placeholder="Search Books"
+              />
+
+              <div className="line"></div>
+              <Link path to="/signin" className="signin-link">
+                Sign in
+              </Link>
+              <button className="signup-link" onClick={handleClick}>
+                Sign up
+              </button>
+            </div>
+          </>
