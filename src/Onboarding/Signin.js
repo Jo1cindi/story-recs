@@ -13,6 +13,10 @@ const Signin = () => {
           <img src={illustration} alt="illustration" />
         </div>
         <div className="signup-form">
+          <div className="logo">
+            <p className="logo1">Story</p>
+            <p className="logo2">Recs</p>
+          </div>
           <h3>Welcome Back to StoryRecs!</h3>
           <p className="signup-desc">
             Login to your account to get accurate book recommendations based on
@@ -32,7 +36,7 @@ const Signin = () => {
             <div className="terms-and-conditions">
               <div className="policy-text">
                 <p>Forgot Password?</p>
-                <Link path to="" className="reset-link">
+                <Link path to="/reset-password" className="reset-link">
                   Reset Password
                 </Link>
               </div>

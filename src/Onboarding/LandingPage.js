@@ -11,17 +11,25 @@ const LandingPage = () => {
       <Menu />
 
       <div className="page-sections">
-        {/* Hero Section */}
-        <HeroSection />
+        <div className="section-1">
+          {/* Hero Section */}
+          <HeroSection />
+        </div>
 
-        {/* Recommendations */}
-        <Recommended />
+        <div className="section-2">
+          {/* Recommendations */}
+          <Recommended />
+        </div>
 
-        {/* Trending Books */}
-        <TrendingBooks />
+        <div className="section-3">
+          {/* Trending Books */}
+          <TrendingBooks />
+        </div>
 
-        {/* Footer */}
-        <Footer />
+        <div className="section-4">
+          {/* Footer */}
+          <Footer />
+        </div>
       </div>
     </div>
   );

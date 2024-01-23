@@ -1,17 +1,18 @@
 import React from "react";
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Onboarding/onboarding.css";
 import illustration from "../Images/Glasses.svg";
 import LogoLight from "../Components/LogoLight";
 import Google from "../Images/google.svg";
+import Footer from "../Components/Footer";
 
 const Signup = () => {
   //Navigation
-  const navigate  = useNavigate()
+  const navigate = useNavigate();
 
-  const handleClick = () =>{
-    navigate("/verify-account")
-  }
+  const handleClick = () => {
+    navigate("/verify-account");
+  };
 
   return (
     <>
@@ -21,6 +22,10 @@ const Signup = () => {
           <img src={illustration} alt="illustration" />
         </div>
         <div className="signup-form">
+          <div className="logo">
+            <p className="logo1">Story</p>
+            <p className="logo2">Recs</p>
+          </div>
           <h3>Welcome to StoryRecs!</h3>
           <p className="signup-desc">
             Create an account to get accurate book recommendations based on your
@@ -63,7 +68,9 @@ const Signup = () => {
                 </Link>
               </div>
             </div>
-            <button className="signup-btn" onClick={handleClick}>Sign up</button>
+            <button className="signup-btn" onClick={handleClick}>
+              Sign up
+            </button>
             <p className="or">Or</p>
             <div className="google">
               <img src={Google} alt="google" />

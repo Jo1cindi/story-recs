@@ -1,236 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Yeseva+One&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Yeseva+One&display=swap');
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: #F8F4EC;
+body {
+  background-color: #f8f4ec;
+  overflow-x: hidden;
 }
 
 /* Navigation Menu */
-.nav-bar{
+.nav-bar {
   width: 90vw;
   height: 8vh;
   display: flex;
   justify-content: space-between;
-  align-items: center;                                                                                                                                                                                 
+  align-items: center;
   border-bottom: solid 1px #303440;
   margin-bottom: 20px;
   position: fixed;
   top: 0;
   margin-left: 5vw;
-  background-color: #F8F4EC;
+  background-color: #f8f4ec;
   z-index: 99;
 }
-.logo{
+.logo {
   width: 120px;
   height: 60%;
   display: flex;
 }
-.logo1{
+.logo1 {
   font-size: 28px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #405457;
 }
-.logo2{
+.logo2 {
   font-size: 28px;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   font-weight: bold;
-  color: #D63484;
+  color: #d63484;
 }
-.logolight{
+.logolight {
   width: 150px;
   height: 20%;
   display: flex;
   margin-left: 30px;
   margin-top: 20px;
 }
-.logolight1{
+.logolight1 {
   font-size: 32px;
-  font-family: 'Montserrat', sans-serif;
-  color: #F8F4EC;
+  font-family: "Montserrat", sans-serif;
+  color: #f8f4ec;
 }
-.logolight2{
+.logolight2 {
   font-size: 30px;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   font-weight: bold;
-  color: #D63484;
+  color: #d63484;
 }
-.logodark{
+.logodark {
   width: 150px;
   height: 20%;
   display: flex;
   margin-left: 30px;
   margin-top: 20px;
 }
-.logodark1{
+.logodark1 {
   font-size: 32px;
-  font-family: 'Montserrat', sans-serif;
-  color: #F8F4EC;
+  font-family: "Montserrat", sans-serif;
+  color: #f8f4ec;
 }
-.logodark2{
+.logodark2 {
   font-size: 30px;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   font-weight: bold;
-  color: #F8F4EC;
+  color: #f8f4ec;
 }
-.menu{
+.menu {
   width: 85%;
   height: 60%;
   display: flex;
   justify-content: space-between;
 }
-.menu-items{
+.menu-items {
   width: 40%;
   height: 100%;
 }
-.menu-items ul{
+.menu-items ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-.menu-items ul li{
+.menu-items ul li {
   list-style: none;
 }
-.link{
+.link {
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #405457;
 }
-.search-section{
+.search-section {
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.search-input{
-  background-color: #F8F4EC;
+.search-input {
+  background-color: #f8f4ec;
   height: 30px;
   width: 150px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-right: 20px;
   outline: none;
   border: none;
   border-bottom: 1px solid #303440;
   padding-left: 10px;
 }
-.signin-link{
+.signin-link {
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #405457;
   font-size: 14px;
 }
-.signup-link{
-  font-family: 'Montserrat', sans-serif;
-  color: #F8F4EC;
+.signup-link {
+  font-family: "Montserrat", sans-serif;
+  color: #f8f4ec;
   outline: none;
-  background-color: #D63484;
+  background-color: #d63484;
   border: none;
   height: 30px;
   width: 120px;
   font-size: 14px;
   cursor: pointer;
 }
-.line{
+.line {
   width: 1px;
   height: 30px;
   background-color: #303440;
   margin-left: 10px;
 }
-.burger-menu{
+.burger-menu {
   width: 2vw;
   display: none;
   margin-right: 0;
 }
+
+.page-sections {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  top: 8vh;
+  width: 100vw;
+}
+.section-1 {
+  width: 100%;
+  height: auto;
+}
+.section-2 {
+  width: 100%;
+  height: auto;
+}
+.section-3 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.section-4 {
+  width: 100%;
+  height: auto;
+}
+
 /* Hero Section */
-.hero-section{
+.hero-section {
   width: 90%;
   height: 60vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
   padding-top: 40px;
-  position: absolute;
-  top: 8vh;
   margin-left: 5%;
 }
-.hero-text{
+.hero-text {
   width: 50%;
   height: 80%;
 }
-.hero-text h2{
-  font-family: 'Cardo', serif;
+.hero-text h2 {
+  font-family: "Cardo", serif;
   font-size: 55px;
-  color: #D63484;
+  color: #d63484;
 }
-.hero-text p{
-  font-family: 'Montserrat', sans-serif;
+.hero-text p {
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #303440;
   width: 80%;
 }
-.explore{
+.explore {
   width: 150px;
   height: 30px;
-  color: #F8F4EC;
+  color: #f8f4ec;
   background-color: #405457;
   outline: none;
   border: none;
   margin-top: 20px;
 }
 
-.hero-images{
+.hero-images {
   width: 50%;
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
-.hero-images h6{
+.hero-images h6 {
   font-size: 18px;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   color: #405457;
   margin-bottom: 5px;
 }
-.hero-images p{
-  font-family: 'Montserrat', sans-serif;
+.hero-images p {
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #303440;
   margin-bottom: 10px;
 }
-.book1{
+.book1 {
   width: 30%;
   height: 40vh;
   border-radius: 0px 0px 75px 75px;
 }
-.book1 img{
+.book1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0px 0px 100px 100px;
 }
-.book2{
+.book2 {
   width: 30%;
   height: 40vh;
   border-radius: 100px 100px 0 0;
 }
-.book2 img{
+.book2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 100px 100px 0 0;
 }
-.book3{
+.book3 {
   width: 30%;
   height: 40vh;
   border-radius: 0px 0px 100px 100px;
 }
-.book3 img{
+.book3 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -238,245 +262,234 @@ body{
 }
 
 /* Recommended Section */
-.recommended{
+.recommended {
   width: 90vw;
-  height: 40vh;
-  position: absolute;
-  top: 70vh;
   margin-left: 5vw;
   margin-top: 20px;
 }
-.recommended-text{
+.recommended-text {
   width: 100%;
   height: 15%;
   display: flex;
   justify-content: space-between;
 }
-.recommended h4{
+.recommended h4 {
   font-size: 24px;
-  font-family: 'Cardo', serif;
-  color: #D63484;
+  font-family: "Cardo", serif;
+  color: #d63484;
   font-weight: bold;
 }
-.see-more{
+.see-more {
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  color: #D63484;
+  font-family: "Montserrat", sans-serif;
+  color: #d63484;
   font-weight: bold;
 }
-.recommended-books{
+.recommended-books {
   width: 100%;
   height: 85%;
 }
-.recommended-books ul{
+.recommended-books ul {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 12px;
 }
-.recommended-books li{
+.recommended-books li {
   width: 227px;
   height: 100%;
   list-style: none;
 }
-.cover{
+.cover {
   width: 100%;
   height: 70%;
   object-fit: cover;
 }
-.star{
+.star {
   width: 20px;
   height: 20px;
   object-fit: cover;
 }
-.recommended-books h6{
+.recommended-books h6 {
   font-size: 18px;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   color: #405457;
   margin-bottom: 5px;
   margin-top: 5px;
 }
-.recommended-books p{
-  font-family: 'Montserrat', sans-serif;
+.recommended-books p {
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #303440;
   margin-bottom: 5px;
 }
-.goodreads-ratings{
+.goodreads-ratings {
   display: flex;
 }
-.recommended button{
+.recommended button {
   width: 120px;
   height: 30px;
-  background-color: #D63484;
-  color: #F8F4EC;
+  background-color: #d63484;
+  color: #f8f4ec;
   border: none;
   outline: none;
   margin-top: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-.see-more2{
+.see-more2 {
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #405457;
   font-weight: bold;
 }
 /* 
 Trending Books */
 
-.trending{
+.trending {
   width: 90vw;
-  height: 40vh;
-  position: absolute;
-  top: 145vh;
   margin-left: 5vw;
-  margin-top: 20px;
   bottom: 20px;
 }
-.trending-text{
+.trending-text {
   width: 100%;
   height: 15%;
   display: flex;
   justify-content: space-between;
 }
-.trending h4{
+.trending h4 {
   font-size: 24px;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   color: #405457;
   font-weight: bold;
 }
-.trending p{
-  font-family: 'Montserrat', sans-serif;
+.trending p {
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #303440;
-  margin-bottom: 5px;                                                                                
+  margin-bottom: 5px;
 }
-.trending-books{
+.trending-books {
   width: 100%;
   height: 70%;
 }
-.trending-books ul{
+.trending-books ul {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 12px;
 }
-.trending-books li{
+.trending-books li {
   width: 227px;
   height: 100%;
   list-style: none;
 }
-.trending-books h6{
+.trending-books h6 {
   font-size: 18px;
-  font-family: 'Cardo', serif;
-  color: #D63484;
+  font-family: "Cardo", serif;
+  color: #d63484;
   margin-top: 5px;
   height: 50px;
 }
-.trending-books p{
-  font-family: 'Montserrat', sans-serif;
+.trending-books p {
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #303440;
   margin-bottom: 5px;
 }
-.trending button{
+.trending button {
   width: 120px;
   height: 30px;
   background-color: #405457;
-  color: #F8F4EC;
+  color: #f8f4ec;
   border: none;
   outline: none;
   margin-top: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.footer{
+.footer {
   width: 100%;
-  height: 30vh;
-  position: absolute;
-  top: 230vh;
   border-top: solid 1px #303440;
 }
-.footer-container{
+.footer-container {
   width: 90%;
   height: 100%;
   margin: auto;
   display: flex;
 }
-.logo-container{
+.logo-container {
   width: 25%;
   height: 80%;
   margin-top: 30px;
 }
-.footer-info{
+.footer-info {
   width: 50%;
   height: 80%;
   margin-top: 30px;
   display: flex;
 }
-.footer-image{
+.footer-image {
   width: 25%;
   height: 100%;
 }
-.footer-image img{
+.footer-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   margin: 0 auto;
 }
-.copyright p{
-  font-family: 'Montserrat', sans-serif;
+.copyright p {
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #303440;
   font-weight: 500;
 }
-.Company{
+.Company {
   width: 50%;
   height: 100%;
 }
-.footer h4{
-  font-family: 'Cardo', serif;
+.footer h4 {
+  font-family: "Cardo", serif;
   font-size: 18px;
   color: #405457;
   font-weight: bold;
 }
-.Company p{
-  font-family: 'Montserrat', sans-serif;
+.Company p {
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #303440;
   font-weight: 500;
   margin-top: 5px;
 }
-.socials{
+.socials {
   width: 100%;
   height: 100%;
 }
-.social-icons{
+.social-icons {
   width: 100%;
   height: 20px;
   display: flex;
   margin-top: 20px;
 }
-.social{
+.social {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
-.social img{
+.social img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-
 /* Mobile View */
-@media screen and (max-width: 600px) and (min-width: 280px){
-  body{
+@media screen and (max-width: 600px) and (min-width: 280px) {
+  body {
     overflow-x: hidden;
   }
-  .burger-menu{
+  .burger-menu {
     width: 30px;
     height: 20px;
     display: flex;
@@ -485,494 +498,485 @@ Trending Books */
     margin-right: 2rem;
     cursor: pointer;
   }
-  .lines{
-    background-color: #D63484;
+  .lines {
+    background-color: #d63484;
     width: 100%;
     height: 2px;
   }
-  .menu{
+  .menu {
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 8vh;
-    background-color: #F8F4EC;
+    background-color: #f8f4ec;
     width: 100%;
     height: 40vh;
     align-items: center;
     border-bottom: solid 1px #303440;
   }
-  .menu-items ul{
+  .menu-items ul {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     height: 70%;
   }
-  .search-section{
+  .search-section {
     display: flex;
     flex-direction: column;
     height: 25%;
-    margin-bottom:30px;
+    margin-bottom: 30px;
   }
-  .line{
+  .line {
     display: none;
   }
-  .search-input{
+  .search-input {
     display: none;
   }
-  .hero-section{
+  .hero-section {
     width: 90%;
-    height: 60vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    position: absolute;
-    top: 8vh;
     margin-left: 5%;
+    height: auto;
   }
-  .hero-text{
+  .hero-text {
     width: 100%;
-    height: 80%;
   }
-  .hero-text h2{
+  .hero-text h2 {
     font-size: 28px;
   }
-  .hero-text p{
+  .hero-text p {
     font-size: 14px;
   }
-  .hero-images{
+  .hero-images {
     width: 100%;
-    height: 100%;
     display: flex;
     margin-top: 40px;
   }
-  .hero-images h6{
+  .hero-images h6 {
     font-size: 18px;
-    font-family: 'Cardo', serif;
+    font-family: "Cardo", serif;
     color: #405457;
     margin-bottom: 5px;
   }
-  .hero-images p{
-    font-family: 'Montserrat', sans-serif;
+  .hero-images p {
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     color: #303440;
     margin-bottom: 10px;
   }
-  .book1{
+  .book1 {
     width: 30%;
     height: 30vh;
     border-radius: 0px 0px 75px 75px;
   }
-  .book1 img{
+  .book1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 0px 0px 100px 100px;
     margin-top: 20px;
   }
-  .book2{
+  .book2 {
     width: 30%;
     height: 30vh;
     border-radius: 100px 100px 0 0;
   }
-  .book2 img{
+  .book2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 100px 100px 0 0;
     margin-top: 20px;
   }
-  .book3{
+  .book3 {
     width: 30%;
     height: 30vh;
     border-radius: 100px 100px 0 0;
   }
-  .book3 img{
+  .book3 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 100px 100px 0 0;
     margin-top: 20px;
   }
-  
-  /* Recommended Section */
-.recommended{
-  position: absolute;
-  top: 90vh;
-}
-.recommended h4{
-  font-size: 18px;
-}
-.see-more{
-  font-size: 14px;
-}
-.recommended-books{
-  width: 100%;
-  height: 50%;
-}
-.recommended-books ul{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-.recommended-books li{
-  width: 100%;
-  height: 100%;
-  list-style: none;
-}
-.recommended-books h6{
-  font-size: 16px;
-}
-.see-more2{
-  font-size: 14px;
-}
-
-/* Trending Books  */
-
-.trending{
-  position: absolute;
-  top: 275vh;
-}
-.trending h4{
-  font-size: 18px;
-}
-.trending-books{
-  width: 100%;
-  height: 50%;
-} 
-.trending-books ul{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-.trending-books li{
-  width: 100%;
-  height: 100%;
-  list-style: none;
-}
-.trending-books h6{
-  font-size: 16px;
-  height: 25px;
-}
-
-/* Footer */
-.footer{
-  width: 100%;
-  height: 30vh;
-  position: absolute;
-  top: 470vh;
-  border-top: solid 1px #303440;
-}
-.footer-container{
-  display: flex;
-  flex-direction: column;
-}
-.logo-container{
-  width: 100%;
-  height: 80%;
-  margin-top: 10px;
-  font-size: 14px;
-}
-.footer-info{
-  width: 100%;
-  height: 80%;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.footer-image{
-  width: 100%;
-  height: 100%;
-}
-.footer-image img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: 0 auto;
-}
-.copyright p{
-  font-size: 14px;
-  margin-top: 5px;
-}
-.Company{
-  width: 100%;
-  height: 100%;
-}
-.footer h4{
-  font-size: 16px;
-}
-
-.socials{
-  margin-top: 20px;
-  width: 100%;
-  height: 100%;
-}
-
-}
-
-
-
-
-/* tablet view */
-@media screen and (max-width: 1024px) and (min-width: 600px){
-  body{
-    overflow-x: hidden;
-}
-.burger-menu{
-  width: 30px;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 2rem;
-  cursor: pointer;
-}
-.lines{
-  background-color: #D63484;
-  width: 100%;
-  height: 2px;
-}
-.menu{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 8vh;
-  background-color: #F8F4EC;
-  width: 100%;
-  height: 40vh;
-  align-items: center;
-  border-bottom: solid 1px #303440;
-}
-.menu-items ul{
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  height: 70%;
-}
-.search-section{
-  display: flex;
-  flex-direction: column;
-  height: 25%;
-  margin-bottom: 30px;
-}
-.line{
-  display: none;
-}
-.search-input{
-  display: none;
-}
-.hero-section{
-  width: 90%;
-  height: 60vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  position: absolute;
-  top: 8vh;
-  margin-left: 5%;
-}
-.hero-text{
-  width: 100%;
-  height: 80%;
-}
-.hero-text h2{
-  font-size: 40px;
-}
-.hero-text p{
-  font-size: 14px;
-}
-.hero-images{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  margin-top: 40px;
-}
-.hero-images h6{
-  font-size: 18px;
-  font-family: 'Cardo', serif;
-  color: #405457;
-  margin-bottom: 5px;
-}
-.hero-images p{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: #303440;
-  margin-bottom: 10px;
-}
-.book1{
-  width: 30%;
-  height: 40vh;
-  border-radius: 0px 0px 75px 75px;
-}
-.book1 img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0px 0px 100px 100px;
-  margin-top: 20px;
-}
-.book2{
-  width: 30%;
-  height: 40vh;
-  border-radius: 100px 100px 0 0;
-}
-.book2 img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 100px 100px 0 0;
-  margin-top: 20px;
-}
-.book3{
-  width: 30%;
-  height: 40vh;
-  border-radius: 100px 100px 0 0;
-}
-.book3 img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 100px 100px 0 0;
-  margin-top: 20px;
-}
 
   /* Recommended Section */
-  .recommended{
-    position: absolute;
-    top: 90vh;
+  .recommended {
+    margin-top: 125px;
   }
-  .recommended h4{
+  .recommended h4 {
     font-size: 18px;
   }
-  .see-more{
+  .see-more {
     font-size: 14px;
   }
-  .recommended-books{
+  .recommended-books {
     width: 100%;
     height: 50%;
   }
-  .recommended-books ul{
+  .recommended-books ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .recommended-books li {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+  }
+  .recommended-books h6 {
+    font-size: 16px;
+  }
+  .see-more2 {
+    font-size: 14px;
+  }
+  .recommended-text {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  /* Trending Books  */
+
+  .trending-text {
+    margin-bottom: 10px;
+  }
+  .trending h4 {
+    font-size: 18px;
+  }
+  .trending-books {
+    width: 100%;
+    height: 50%;
+  }
+  .trending-books ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .trending-books li {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+  }
+  .trending-books h6 {
+    font-size: 16px;
+    height: 25px;
+  }
+
+  /* Footer */
+  .footer {
+    width: 100%;
+    position: absolute;
+    border-top: solid 1px #303440;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-container {
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .footer-info {
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-image {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .copyright p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .Company {
+    width: 100%;
+    height: 100%;
+  }
+  .footer h4 {
+    font-size: 16px;
+  }
+
+  .socials {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* tablet view */
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .burger-menu {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+  .lines {
+    background-color: #d63484;
+    width: 100%;
+    height: 2px;
+  }
+  .menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 8vh;
+    background-color: #f8f4ec;
+    width: 100%;
+    height: 40vh;
+    align-items: center;
+    border-bottom: solid 1px #303440;
+  }
+  .menu-items ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 70%;
+  }
+  .search-section {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    margin-bottom: 30px;
+  }
+  .line {
+    display: none;
+  }
+  .search-input {
+    display: none;
+  }
+  .hero-section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 5%;
+  }
+  .hero-text {
+    width: 100%;
+    height: 80%;
+  }
+  .hero-text h2 {
+    font-size: 40px;
+  }
+  .hero-text p {
+    font-size: 14px;
+  }
+  .hero-images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 40px;
+  }
+  .hero-images h6 {
+    font-size: 18px;
+    font-family: "Cardo", serif;
+    color: #405457;
+    margin-bottom: 5px;
+  }
+  .hero-images p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #303440;
+    margin-bottom: 10px;
+  }
+  .book1 {
+    width: 30%;
+    height: 40vh;
+    border-radius: 0px 0px 75px 75px;
+  }
+  .book1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 0px 100px 100px;
+    margin-top: 20px;
+  }
+  .book2 {
+    width: 30%;
+    height: 40vh;
+    border-radius: 100px 100px 0 0;
+  }
+  .book2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px 100px 0 0;
+    margin-top: 20px;
+  }
+  .book3 {
+    width: 30%;
+    height: 40vh;
+    border-radius: 100px 100px 0 0;
+  }
+  .book3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px 100px 0 0;
+    margin-top: 20px;
+  }
+
+  /* Recommended Section */
+  .recommended {
+    margin-top: 175px;
+  }
+  .recommended-text {
+    margin-bottom: 10px;
+  }
+  .recommended h4 {
+    font-size: 18px;
+  }
+  .see-more {
+    font-size: 14px;
+  }
+  .recommended-books {
+    width: 100%;
+    height: 50%;
+  }
+  .recommended-books ul {
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
   }
-  .recommended-books li{
+  .recommended-books li {
     width: 100%;
     height: 100%;
     list-style: none;
   }
-  .cover{
+  .cover {
     width: 100%;
     height: 70%;
     object-fit: cover;
   }
-  .star{
+  .star {
     width: 20px;
     height: 20px;
     object-fit: cover;
   }
-  .recommended-books h6{
+  .recommended-books h6 {
     font-size: 16px;
   }
-  .recommended button{
+  .recommended button {
     width: 120px;
     height: 30px;
-    background-color: #D63484;
-    color: #F8F4EC;
+    background-color: #d63484;
+    color: #f8f4ec;
     border: none;
     outline: none;
     margin-top: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
-  .see-more2{
+  .see-more2 {
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #405457;
     font-weight: bold;
   }
   /* Trending Books  */
+  .trending-text {
+    margin-bottom: 10px;
+  }
+  .trending h4 {
+    font-size: 18px;
+  }
+  .trending-books {
+    width: 100%;
+    height: 50%;
+  }
+  .trending-books ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    justify-content: space-between;
+  }
+  .trending-books li {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+  }
+  .trending-books h6 {
+    font-size: 16px;
+    height: 25px;
+  }
+  .footer {
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 375vh;
+    border-top: solid 1px #303440;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-container {
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .footer-info {
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-image {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .copyright p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .Company {
+    width: 100%;
+    height: 100%;
+  }
+  .footer h4 {
+    font-size: 16px;
+  }
 
-.trending{
-  position: absolute;
-  top: 220vh;
+  .socials {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+  }
 }
-.trending h4{
-  font-size: 18px;
-}
-.trending-books{
-  width: 100%;
-  height: 50%;
-} 
-.trending-books ul{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  justify-content: space-between;
-}
-.trending-books li{
-  width: 100%;
-  height: 100%;
-  list-style: none;
-}
-.trending-books h6{
-  font-size: 16px;
-  height: 25px;
-}
-.footer{
-  width: 100%;
-  height: 30vh;
-  position: absolute;
-  top: 375vh;
-  border-top: solid 1px #303440;
-}
-.footer-container{
-  display: flex;
-  flex-direction: column;
-}
-.logo-container{
-  width: 100%;
-  height: 80%;
-  margin-top: 10px;
-  font-size: 14px;
-}
-.footer-info{
-  width: 100%;
-  height: 80%;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.footer-image{
-  width: 100%;
-  height: 100%;
-}
-.footer-image img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: 0 auto;
-}
-.copyright p{
-  font-size: 14px;
-  margin-top: 5px;
-}
-.Company{
-  width: 100%;
-  height: 100%;
-}
-.footer h4{
-  font-size: 16px;
-}
-
-.socials{
-  margin-top: 20px;
-  width: 100%;
-  height: 100%;
-}  
-}
-
