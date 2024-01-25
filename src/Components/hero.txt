@@ -1,0 +1,78 @@
+<div className="hero-section">
+        <div className="hero-text">
+          <h2>Find Your Next Favourite Book.</h2>
+          <p>
+            Get accurate book recommendations based on your most recent book.
+            Just enter your the title of either your recent read or favorite
+            book on the search bar, search and you're ready to go!
+          </p>
+          <button className="explore">Explore</button>
+        </div>
+        <div className="hero-images">
+          <div className="book1">
+            <h6>The Heart's Invisible Furies</h6>
+            <p>John Boyne</p>
+            <img src={Book1} alt="book1" />
+          </div>
+          <div className="book2">
+            <img src={Book2} alt="book2" />
+            <h6>Alone With You In The Ether</h6>
+            <p>Olivie Blake</p>
+          </div>
+          <div className="book3">
+          <h6>Young Mungo</h6>
+            <p>Douglas Stuart</p>
+            <img src={Book3} alt="book3" />
+          </div>
+        </div>
+      </div> 
+
+
+
+      <div className="recommended-text">
+      <h4>Recommended For You</h4>
+      <Link path to = "" className="see-more">See more</Link>
+      </div>
+
+      <div className="recommended-books">
+        <ul>
+          {
+            books.map((book, index)=>(
+              <li key={index}>
+                 <img src={book.book_cover} alt="book cover" className="cover"/>
+                 <h6>{book.book_title}</h6>
+                 <p>{book.author}</p>
+                 <div className="goodreads-ratings">
+                  <p>Goodreads Rating: {book.rating}</p>
+                  <img src={book.star} alt="star" className="star"/>
+                 </div>
+                 <button>View More</button>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div className="trending-text">
+        <h4>Recommended For You</h4>
+        <Link path to = "" className="see-more2                                                                    ">See more</Link>
+        </div>
+  
+        <div className="trending-books">
+          <ul>
+            {
+              books.map((book, index)=>(
+                <li key={index}>
+                   <img src={book.book_cover} alt="book cover" className="cover"/>
+                   <h6>{book.book_title}</h6>
+                   <p>{book.author}</p>
+                   <div className="goodreads-ratings">
+                    <p>Goodreads Rating: {book.rating}</p>
+                    <img src={book.star} alt="star" className="star"/>
+                   </div>
+                   <button>View More</button>
+                </li>
+              ))
+            }
+          </ul>
+        </div>

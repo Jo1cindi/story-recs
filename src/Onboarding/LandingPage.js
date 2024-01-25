@@ -25,11 +25,8 @@ const LandingPage = () => {
           {/* Trending Books */}
           <TrendingBooks />
         </div>
-
-        <div className="section-4">
-          {/* Footer */}
-          <Footer />
-        </div>
+        <Footer />
+        <div className="section-4">{/* Footer */}</div>
       </div>
     </div>
   );

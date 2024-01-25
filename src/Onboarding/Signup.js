@@ -4,7 +4,7 @@ import "../Onboarding/onboarding.css";
 import illustration from "../Images/Glasses.svg";
 import LogoLight from "../Components/LogoLight";
 import Google from "../Images/google.svg";
-import Footer from "../Components/Footer";
+
 
 const Signup = () => {
   //Navigation
